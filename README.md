@@ -50,9 +50,8 @@ Just an example, you can use this one or deploy yours.
 ### TODO
 
 - other tokens types (SFT/NFT)
-- add frontend app
 - buildo begins interactions (as general smart contract-related functionality)
-- more configuration options (max amount etc.)
+- more configuration options?
 
 ### Issues, ideas
 
