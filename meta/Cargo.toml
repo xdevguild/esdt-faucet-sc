@@ -1,0 +1,15 @@
+[package]
+name = "esdt-faucet-sc-meta"
+version = "0.1.0"
+authors = ["Julian Ćwirko <julian.cwirko@gmail.com>"]
+edition = "2018"
+publish = false
+
+[dependencies.esdt-faucet-sc]
+path = ".."
+
+[dependencies.elrond-wasm]
+version = "0.34.1"
+
+[dependencies.elrond-wasm-debug]
+version = "0.34.1"
