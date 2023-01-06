@@ -1,4 +1,4 @@
-### Elrond devnet/testnet faucet (distribution) smart contract
+### MultiversX devnet/testnet faucet (distribution) smart contract
 
 The primary purpose of the smart contract is to have a simple solution for ESDT tokens faucet on the devnet and testnet. It is helpful for demo purposes and testing.
 
