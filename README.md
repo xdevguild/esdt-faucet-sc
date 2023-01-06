@@ -33,13 +33,13 @@ The `BUILDO-890d14` token has 18 decimal places.
 
 ### How to interact with it using the frontend dApp
 
-It is quite straightforward. The Nextjs dApp is based on [nextjs-dapp-template](https://github.com/ElrondDevGuild/nextjs-dapp-template). By default it will use the smart contract listed below. But you can deploy yours and change it in the .env variables.
+It is quite straightforward. The Nextjs dApp is based on [nextjs-dapp-template](https://github.com/xdevguild/nextjs-dapp-template). By default it will use the smart contract listed below. But you can deploy yours and change it in the .env variables.
 
 With the dApp you can login using one of four auth providers and then deposit the ESDTs if you are the manager or claim ESDTs if you need some of them.
 
-The Dapp repository: https://github.com/ElrondDevGuild/esdt-faucet-dapp.
+The Dapp repository: https://github.com/xdevguild/esdt-faucet-dapp.
 
-Live app on the devnet: https://devnet-elrond-esdt-faucet.netlify.app
+Live app on the devnet: https://devnet-multiversx-esdt-faucet.netlify.app
 
 ### Currently deployed example smart contract
 
@@ -61,4 +61,4 @@ Please report all bugs and ideas for improvements.
 
 - [Elven Tools](https://github.com/ElvenTools)
 - [Elven.js](https://github.com/juliancwirko/elven.js)
-- [Buildo Begins](https://github.com/ElrondDevGuild/buildo-begins)
+- [Buildo Begins](https://github.com/xdevguild/buildo-begins)
