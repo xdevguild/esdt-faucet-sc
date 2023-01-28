@@ -1,9 +1,9 @@
 #![no_std]
 
-elrond_wasm::imports!();
-elrond_wasm::derive_imports!();
+multiversx_sc::imports!();
+multiversx_sc::derive_imports!();
 
-#[elrond_wasm::contract]
+#[multiversx_sc::contract]
 pub trait EsdtFaucet {
     #[init]
     fn init(&self) {}

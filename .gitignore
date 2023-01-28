@@ -3,7 +3,7 @@
 /target/
 */target/
 
-# The erdpy output
+# The mxpy output
 # output
 esdt-faucet-sc.imports.json
 esdt-faucet-sc.wat

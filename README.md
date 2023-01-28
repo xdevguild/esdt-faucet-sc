@@ -10,24 +10,24 @@ The primary purpose of the smart contract is to have a simple solution for ESDT 
 - Users can call the claim endpoint once per 24 hours
 - Everyone can send ESDT tokens to the smart contract
 
-### How to deploy and interact with erdpy
+### How to deploy and interact with mxpy
 
-For now, the best would be to use the erdpy (example for the devnet) (there will also be an option with the Buildo Begins tool, it should be much simpler then):
+For now, the best would be to use the mxpy (example for the devnet) (there will also be an option with the Buildo Begins tool, it should be much simpler then):
 
 Deploy (max tokens per day, a percentage from the whole supply, as an argument, here 1)
 ```bash
-erdpy --verbose contract deploy --chain="D" --project=esdt-faucet-sc --pem="walletKey.pem" --gas-limit=80000000 --proxy="https://devnet-gateway.elrond.com" --recall-nonce --send
+mxpy --verbose contract deploy --chain="D" --project=esdt-faucet-sc --pem="walletKey.pem" --gas-limit=80000000 --proxy="https://devnet-gateway.multiversx.com" --recall-nonce --send
 ```
 
 Deposit and call the setLimit function on sc (arguments for setLimit (here 100), we are depositing 10_000_000 of the token)
 ```bash
-erdpy --verbose contract call <your_smart_contract_address_here> --chain="D" --pem="walletKey.pem" --gas-limit=3000000 --function="ESDTTransfer" --arguments str:BUILDO-890d14 10000000000000000000000000 str:setLimit 100000000000000000000 --proxy="https://devnet-gateway.elrond.com" --recall-nonce --send
+mxpy --verbose contract call <your_smart_contract_address_here> --chain="D" --pem="walletKey.pem" --gas-limit=3000000 --function="ESDTTransfer" --arguments str:BUILDO-890d14 10000000000000000000000000 str:setLimit 100000000000000000000 --proxy="https://devnet-gateway.multiversx.com" --recall-nonce --send
 ```
 The `BUILDO-890d14` token has 18 decimal places.
 
 Claim ESDTs (token id (here BUILDO-890d14) and amount to claim (here 3))
 ```bash
-erdpy --verbose contract call <your_smart_contract_address_here> --chain="D" --pem="walletKey.pem" --gas-limit=3000000 --function="claim" --arguments str:BUILDO-890d14 3000000000000000000 --proxy="https://devnet-gateway.elrond.com" --recall-nonce --send
+mxpy --verbose contract call <your_smart_contract_address_here> --chain="D" --pem="walletKey.pem" --gas-limit=3000000 --function="claim" --arguments str:BUILDO-890d14 3000000000000000000 --proxy="https://devnet-gateway.multiversx.com" --recall-nonce --send
 ```
 The `BUILDO-890d14` token has 18 decimal places.
 
