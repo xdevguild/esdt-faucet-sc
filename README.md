@@ -16,20 +16,20 @@ For now, the best would be to use the mxpy (example for the devnet) (there will 
 
 Deploy (max tokens per day, a percentage from the whole supply, as an argument, here 1)
 ```bash
-mxpy --verbose contract deploy --chain="D" --project=esdt-faucet-sc --pem="walletKey.pem" --gas-limit=80000000 --proxy="https://devnet-gateway.multiversx.com" --recall-nonce --send
+mxpy --verbose contract deploy --chain="D" --bytecode="./output/esdt-faucet-sc.wasm" --pem="./walletKey.pem" --gas-limit=80000000 --proxy="https://devnet-gateway.multiversx.com" --recall-nonce --send
 ```
 
 Deposit and call the setLimit function on sc (arguments for setLimit (here 100), we are depositing 10_000_000 of the token)
 ```bash
-mxpy --verbose contract call <your_smart_contract_address_here> --chain="D" --pem="walletKey.pem" --gas-limit=3000000 --function="ESDTTransfer" --arguments str:BUILDO-890d14 10000000000000000000000000 str:setLimit 100000000000000000000 --proxy="https://devnet-gateway.multiversx.com" --recall-nonce --send
+mxpy --verbose contract call <your_smart_contract_address_here> --chain="D" --pem="walletKey.pem" --gas-limit=3000000 --function="ESDTTransfer" --arguments str:BUILDO-22c0a5 10000000000000000000000000 str:setLimit 100000000000000000000 --proxy="https://devnet-gateway.multiversx.com" --recall-nonce --send
 ```
-The `BUILDO-890d14` token has 18 decimal places.
+The `BUILDO-22c0a5` token has 18 decimal places.
 
-Claim ESDTs (token id (here BUILDO-890d14) and amount to claim (here 3))
+Claim ESDTs (token id (here BUILDO-22c0a5) and amount to claim (here 3))
 ```bash
-mxpy --verbose contract call <your_smart_contract_address_here> --chain="D" --pem="walletKey.pem" --gas-limit=3000000 --function="claim" --arguments str:BUILDO-890d14 3000000000000000000 --proxy="https://devnet-gateway.multiversx.com" --recall-nonce --send
+mxpy --verbose contract call <your_smart_contract_address_here> --chain="D" --pem="walletKey.pem" --gas-limit=3000000 --function="claim" --arguments str:BUILDO-22c0a5 3000000000000000000 --proxy="https://devnet-gateway.multiversx.com" --recall-nonce --send
 ```
-The `BUILDO-890d14` token has 18 decimal places.
+The `BUILDO-22c0a5` token has 18 decimal places.
 
 ### How to interact with it using the frontend dApp
 
@@ -45,7 +45,7 @@ Live app on the devnet: https://devnet-multiversx-esdt-faucet.netlify.app
 
 Just an example, you can use this one or deploy yours.
 
-- [erd1qqqqqqqqqqqqqpgqwd59aum8c7c72ces7cezsmhqd8rqrtwagtksp6jahr](https://devnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgqwd59aum8c7c72ces7cezsmhqd8rqrtwagtksp6jahr)
+- [erd1qqqqqqqqqqqqqpgq7a0cq90r2kqymtaqysxp7umrcyp04jgmgtkscelhmp](https://devnet-explorer.multiversx.com/accounts/erd1qqqqqqqqqqqqqpgq7a0cq90r2kqymtaqysxp7umrcyp04jgmgtkscelhmp)
 
 ### TODO
 
