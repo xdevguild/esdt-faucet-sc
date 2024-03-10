@@ -1,19 +1,19 @@
 {
     "buildInfo": {
         "rustc": {
-            "version": "1.73.0-nightly",
-            "commitHash": "db7ff98a72f3e742b641f9cb16d0e8c285e87e9b",
-            "commitDate": "2023-07-31",
+            "version": "1.76.0-nightly",
+            "commitHash": "d86d65bbc19b928387f68427fcc3a0da498d8a19",
+            "commitDate": "2023-12-10",
             "channel": "Nightly",
-            "short": "rustc 1.73.0-nightly (db7ff98a7 2023-07-31)"
+            "short": "rustc 1.76.0-nightly (d86d65bbc 2023-12-10)"
         },
         "contractCrate": {
             "name": "esdt-faucet-sc",
-            "version": "0.4.0"
+            "version": "0.5.0"
         },
         "framework": {
             "name": "multiversx-sc",
-            "version": "0.43.5"
+            "version": "0.47.5"
         }
     },
     "name": "EsdtFaucet",
@@ -67,7 +67,7 @@
             ]
         }
     ],
-    "events": [],
+    "esdtAttributes": [],
     "hasCallback": false,
     "types": {}
 }

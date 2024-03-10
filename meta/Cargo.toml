@@ -1,7 +1,7 @@
 [package]
 name = "esdt-faucet-sc-meta"
-version = "0.4.0"
-authors = ["Julian Ćwirko <julian.cwirko@gmail.com>"]
+version = "0.5.0"
+authors = ["Julian Ćwirko <julian.io>"]
 edition = "2021"
 publish = false
 
@@ -9,4 +9,4 @@ publish = false
 path = ".."
 
 [dependencies.multiversx-sc-meta]
-version = "0.43.5"
+version = "0.47.5"
